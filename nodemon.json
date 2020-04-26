@@ -1,0 +1,30 @@
+{
+    "restartable":"rs",
+    "ignore":[""],
+    "verbose": true,
+    "execMap":{
+        "":"node",
+        "test": "gulp test"
+    },
+    "events":{
+      "start":"gulp",
+      "crash":"",
+      "exit":"",
+      "restart":"gulp"
+    },
+    "ext": "js json",
+    "watch":[
+      "./app.js",
+      "./models/*.js",
+      "./public/*.js",
+      "./schemas/*.js",
+      "./router/*.js",
+      "./views/**"
+    ],
+    "env":{
+      "NODE_ENV":"env",
+      "PORT":"3000"
+    },
+    "legacy-watch":false
+  
+  }
